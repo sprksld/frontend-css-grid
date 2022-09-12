@@ -1,3 +1,8 @@
+:root {
+    --canvasColor: #ffefdb;
+    --backgroundColor: #ba3b44;
+    --foregroundColor: white;
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-    background-color: #ffefdb;
+    background-color: var(--canvasColor);
     color: white;
     padding: 40px;
 }
@@ -20,11 +25,11 @@ main {
 
 section {
     display: flex;
-    flex-display: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #ba3b44;
+    background-color: var(--backgroundColor);
 }
 
 .section-a {
