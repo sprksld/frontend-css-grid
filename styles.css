@@ -1,1 +1,61 @@
-/*Maak hier jouw CSS!*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffefdb;
+    color: white;
+    padding: 40px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 50px 50px 50px 50px 50px;
+    grid-template-areas: "a" "b" "c" "d" "e" "." "f";
+    grid-gap: 16px;
+}
+
+section {
+    display: flex;
+    flex-display: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #ba3b44;
+}
+
+.section-a {
+    grid-area: a;
+}
+
+.section-b {
+    grid-area: b;
+}
+
+.section-c {
+    grid-area: c;
+}
+
+.section-d {
+    grid-area: d;
+}
+
+.section-e {
+    grid-area: e;
+}
+
+.section-f {
+    grid-area: f;
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50px 174px 100px 1fr 50px;
+        grid-template-areas: "a c c" "b c c" "b e d" "b e ." "f f f";
+    }
+}
