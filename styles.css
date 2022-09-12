@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--canvasColor);
-    color: white;
+    color: var(--foregroundColor);
     padding: 40px;
 }
 
